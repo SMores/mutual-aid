@@ -82,9 +82,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import 'bulma/bulma';
-
+<style>
 .tileListItem {
   @include tablet {
     margin-left: 0.5rem;
