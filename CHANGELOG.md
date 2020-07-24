@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.5] - 2020-07-24
+### Bugfixes
+* Only show visible subcategories for any visible category #594
+
 ## [0.2.4] - 2020-07-23
 ### Bugfixes
 * Make login logo get populated from current_organization (last is_instance_owner) #581
@@ -8,7 +12,8 @@
 * Update submissions importer #577 & #579
 * Add UI to upload submission responses for import #589, #585
 * Improve tag_list checkbox UI #579
-* Add +Listing buttons to Submission #578
+* Add +Listing buttons to Submission #578 #590
+* Add node-version dotfile
 
 ## [0.2.3] - 2020-07-09
 ### Enhancements
