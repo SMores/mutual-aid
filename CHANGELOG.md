@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.7] - 2020-07-30
+### Enhancements
+* Display inexhaustible icon on Contributions, Matches, Respond #601
+* Update Listings index layout to include buttons to get to Listing edit #604
+
+### Bugfixes
+* Fix bug where inexhaustible wasn't updating when edited on Triage page #604
+* Add more terms to glossary #603
+* Add Listings index to Contribution data section of Admin landing page #602
+
 ## [0.2.6] - 2020-07-25
 ### Enhancements
 * Allow custom questions to be added to Ask and Offer forms #597
