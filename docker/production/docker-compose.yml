@@ -52,7 +52,7 @@ services:
   caddy:
     image: caddy
     volumes:
-      - "/root/.config/Caddyfile:/etc/caddy/Caddyfile"
+      - "/usr/src/config/Caddyfile:/etc/caddy/Caddyfile"
       - "caddy_data:/data"
       - "public:/config/public"
     ports:
