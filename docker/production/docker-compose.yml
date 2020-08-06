@@ -43,6 +43,7 @@ services:
       # Otherwise the database setup step will fail
       SECRET_KEY_BASE: "${SECRET_KEY_BASE}"
       RAILS_LOG_TO_STDOUT: "true"
+      RACK_TIMEOUT_SERVICE_TIMEOUT: 30
     volumes:
       - "public:/usr/src/app/public"
     logging:
