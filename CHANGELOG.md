@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.9] - 2020-08-06
+### Enhancements
+* Ask/Offer form now generates a listing for each category selected #536, #620
+
+### Bugfixes
+* Ask/Offer form breaks when no custom questions are configured #621, #622
+
 ## [0.2.8] - 2020-08-02
 ### Bugfixes
 * Remove final & operator so all nils -> 0.0  #618
