@@ -10,17 +10,22 @@ RUN bundle install
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 
-ENV RAILS_ENV='' \
+ENV RAILS_ENV=production \
     POSTGRES_HOST='' \
     POSTGRES_PASSWORD='' \
     POSTGRES_USER='postgres' \
     POSTGRES_DB='' \
     SECRET_KEY_BASE='' \
-    EMAIL_PORT='' \
-    EMAIL_HOST='' \
-    EMAIL_FROM_ADDR='' \
-    EMAIL_DEFAULT_URL_HOST=''
-
+    SENDGRID_API_KEY='' \
+    SMTP_ADDRESS='' \
+    SMTP_FROM_EMAIL='' \
+    SMTP_PASSWORD='' \
+    SMTP_PORT='' \
+    SMTP_USERNAME='' \
+    SYSTEM_APP_NAME='' \
+    SYSTEM_EMAIL='' \
+    SYSTEM_HOST_NAME='' \
+    SYSTEM_PASSWORD=''
 COPY . ./
 
 RUN bundle exec rake assets:precompile
