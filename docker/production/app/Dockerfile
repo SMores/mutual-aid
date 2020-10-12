@@ -11,21 +11,7 @@ COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 
 ENV RAILS_ENV=production \
-    POSTGRES_HOST='' \
-    POSTGRES_PASSWORD='' \
-    POSTGRES_USER='postgres' \
-    POSTGRES_DB='' \
-    SECRET_KEY_BASE='' \
-    SENDGRID_API_KEY='' \
-    SMTP_HOST='' \
-    SMTP_FROM_EMAIL='' \
-    SMTP_PASSWORD='' \
-    SMTP_PORT='' \
-    SMTP_USERNAME='' \
-    SYSTEM_APP_NAME='' \
-    SYSTEM_EMAIL='' \
-    SYSTEM_HOST_NAME='' \
-    SYSTEM_PASSWORD=''
+    SECRET_KEY_BASE="${SECRET_KEY_BASE}"
 
 COPY . ./
 
