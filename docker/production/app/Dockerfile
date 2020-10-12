@@ -26,6 +26,7 @@ ENV RAILS_ENV=production \
     SYSTEM_EMAIL='' \
     SYSTEM_HOST_NAME='' \
     SYSTEM_PASSWORD=''
+
 COPY . ./
 
 RUN bundle exec rake assets:precompile
