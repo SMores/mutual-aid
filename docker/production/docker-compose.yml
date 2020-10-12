@@ -24,6 +24,14 @@ services:
     build:
       context: ../..
       dockerfile: ./docker/production/app/Dockerfile
+      args:
+        # You can set this by running
+        # rake secret
+        # The resulting key should be placed in a .env file
+        # in this directory, or you can pass it to
+        # docker-compose up --build -e SECRET_KEY_BASE=...
+        # Otherwise the database setup step will fail
+        SECRET_KEY_BASE: "${SECRET_KEY_BASE}"
     ports:
       - target: 3000
         published: 3000
@@ -35,13 +43,6 @@ services:
       POSTGRES_USER: mat
       POSTGRES_DB: mutualaidtompkins
       POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
-      # You can set this by running
-      # rake secret
-      # The resulting key should be placed in a .env file
-      # in this directory, or you can pass it to
-      # docker-compose up --build -e SECRET_KEY_BASE=...
-      # Otherwise the database setup step will fail
-      SECRET_KEY_BASE: "${SECRET_KEY_BASE}"
       RAILS_LOG_TO_STDOUT: "true"
       RACK_TIMEOUT_SERVICE_TIMEOUT: 30
       SENDGRID_API_KEY: "${SENDGRID_API_KEY}"

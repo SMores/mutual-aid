@@ -10,8 +10,9 @@ RUN bundle install
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
 
-ENV RAILS_ENV=production \
-    SECRET_KEY_BASE="${SECRET_KEY_BASE}"
+ARG SECRET_KEY_BASE
+ENV SECRET_KEY_BASE="${SECRET_KEY_BASE}"
+ENV RAILS_ENV=production
 
 COPY . ./
 
