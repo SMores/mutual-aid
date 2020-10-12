@@ -71,11 +71,11 @@ export default {
       default: "Mutual Aid is people helping people. When we take responsibility for our communities, " +
               "caring for each-other, in good times and bad, we can thrive together." },
     landing_page_text_who: { type: String,
-      default: "While Lansing Area Mutual Aid started in response to COVID, " +
+      default: "While Mutual Aid Tompkins started in response to COVID, " +
               "we're a growing organization making sure Neighbors are getting their needs met, " +
               "in this crisis and beyond." },
     landing_page_text_how: { type: String,
-      default: "If you are in the Lansing area, you are a Neighbor, and we've got your back. Got something you need? " +
+      default: "If you are in the Tompkins area, you are a Neighbor, and we've got your back. Got something you need? " +
               "Ask. Got something to give? Offer. Everybody needs help, and everyone has something to give. " +
               "We'll help connect you." }
   }
@@ -85,7 +85,7 @@ export default {
 
 <style scoped>
 
-  .org-heading {  
+  .org-heading {
     text-align: center;
     padding-bottom: 1.5em;
   }
